@@ -20,7 +20,7 @@
 <body>
 <main>
 <h1 id="pulse--privacy-policy">Pulse — Privacy Policy</h1>
-<p>Effective 2026-10-29</p>
+<p>Effective 2026-10-30</p>
 <p>Pulse — Decibel Meter (&quot;Pulse&quot;) is an Android app by WhyToday. This policy
 says what Pulse does with information about you. Contact:
 <a href="mailto:whytodaysupport@gmail.com">whytodaysupport@gmail.com</a>.</p>
@@ -30,9 +30,12 @@ says what Pulse does with information about you. Contact:
 it.</strong> Pulse has no account and no server of its own.</li>
 <li>Three services receive some data: <strong>Sentry</strong> (crash reports), <strong>Google
 Analytics for Firebase</strong> (usage statistics) and, in the free version only,
-<strong>Google AdMob</strong> (ads). Crash reports and usage statistics each have an
-off switch in Settings.</li>
-<li>Pulse never reads your location, contacts or files.</li>
+<strong>Google AdMob</strong> (ads). Crash reports and usage statistics are <strong>off
+unless you turn them on</strong>: Pulse asks once, the first time you open it,
+and each has its own switch in Settings.</li>
+<li>Pulse never reads your contacts or files. It reads your location only
+if you tap &quot;Add this phone's location&quot; on a session, and that location
+stays on your phone.</li>
 </ul>
 <h2 id="what-stays-on-your-phone">What stays on your phone</h2>
 <ul>
@@ -43,7 +46,14 @@ as the session lasts, including with the screen locked.</li>
 <li><strong>Sessions.</strong> Each recording is saved on the phone as a log of one
 sound level per second, with the notes you type: a title, a place, what
 made the noise, how it affected you, markers and a limit line. &quot;Place&quot;
-is text you type; Pulse does not read your location.</li>
+is text you type.</li>
+<li><strong>Location (optional).</strong> Only when you tap &quot;Add this phone's location&quot;
+in a session's details, Pulse asks Android for the phone's approximate
+position once, rounds it to about 1 km and saves it with that session.
+It is never read in the background, never sent to Pulse, Sentry, Google
+Analytics or AdMob, and it is printed on that session's report only.
+Remove it in the session's details, or refuse the location permission
+and Pulse never reads it.</li>
 <li><strong>Audio.</strong> Saved only if you turn on &quot;Save audio with sessions&quot; (off by
 default). The audio file stays on the phone and is deleted with its
 session.</li>
@@ -55,7 +65,8 @@ stored.</p>
 the Android share sheet. It goes only where you send it.</p>
 <h2 id="what-leaves-your-phone">What leaves your phone</h2>
 <h3 id="crash-reports-sentry">Crash reports: Sentry</h3>
-<p>When Pulse crashes or hits an error, it sends a report to Sentry
+<p>Only if you turned on &quot;Send Crash Reports&quot;: when Pulse crashes or hits an
+error, it sends a report to Sentry
 (Functional Software, Inc.): the error type and message, the stack trace,
 the app version, the phone model and the Android version. Before sending,
 Pulse removes file paths and anything that looks like a sound level from
@@ -64,10 +75,11 @@ screenshots and no user identifier. Like any internet service, Sentry sees
 the network address a report comes from; Pulse does not add it to the
 report.</p>
 <p>Sentry keeps error events for the retention period of the Sentry plan
-Pulse uses (Sentry states up to 90 days). Turn this off in Settings, &quot;Send
-Crash Reports&quot;.</p>
+Pulse uses (Sentry states up to 90 days). Turn this on or off in Settings,
+&quot;Send Crash Reports&quot;.</p>
 <h3 id="usage-statistics-google-analytics-for-firebase">Usage statistics: Google Analytics for Firebase</h3>
-<p>Pulse records a small fixed list of events: the Pro page was opened (and
+<p>Only if you turned on &quot;Share Usage Statistics&quot;, Pulse records a small
+fixed list of events: the Pro page was opened (and
 from where), Pro was bought or restored, a session was saved (its length
 in broad bands such as &quot;10 to 60 minutes&quot;, and whether audio was kept), the
 free session limit was reached, a report was exported (Pro, free with an
@@ -82,8 +94,8 @@ always denies Analytics the use of data for ads.</p>
 <p>Where the law requires consent (for example the EEA, the UK and
 Switzerland), Analytics stays off until you accept the consent form.
 Google keeps user-level Analytics data for the retention period set in the
-Pulse Analytics property (Google offers 2 or 14 months). Turn this off in
-Settings, &quot;Share Usage Statistics&quot;.</p>
+Pulse Analytics property (Google offers 2 or 14 months). Turn this on or
+off in Settings, &quot;Share Usage Statistics&quot;.</p>
 <h3 id="ads-google-admob-free-version-only">Ads: Google AdMob (free version only)</h3>
 <p>The free version shows ads from Google AdMob. AdMob receives the
 advertising id, the network address, phone and app information and how
