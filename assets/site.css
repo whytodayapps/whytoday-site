@@ -20,3 +20,24 @@
 @media(max-width:1050px){.hero-stage .phone-iphone.phone-a{width:180px;top:50px}}
 @media(max-width:760px){.hero-stage .phone-iphone.phone-a{width:190px;top:50px}}
 @media(max-width:400px){.hero-stage .phone-iphone.phone-a{width:164px;top:48px}}
+.guide{max-width:720px;margin:60px auto 0}
+.guide h1{font-size:clamp(36px,4.4vw,56px);letter-spacing:-.045em;line-height:1.08}
+.guide h2{font-size:clamp(26px,2.6vw,34px);letter-spacing:-.035em;margin:56px 0 18px}
+.guide h3{font-size:20px;letter-spacing:-.015em;margin:0 0 8px}
+.guide p,.guide li{font-size:17px;line-height:1.75;color:var(--ink)}
+.guide p{margin-bottom:18px}
+.guide ul,.guide ol{padding-left:22px;margin:0 0 18px}
+.guide li{margin-bottom:10px}
+.guide .guide-lead{font-size:20px;line-height:1.6;color:var(--muted)}
+.guide .guide-box{background:var(--green);border-radius:8px;padding:26px 30px;margin:34px 0}
+.guide .guide-box h2{font-size:22px;margin:0 0 12px}
+.guide .guide-box ul{margin:0}
+.guide .guide-steps{list-style:none;padding:0;counter-reset:step}
+.guide .guide-steps>li{counter-increment:step;position:relative;padding:0 0 8px 58px;margin-bottom:22px}
+.guide .guide-steps>li:before{content:counter(step);position:absolute;left:0;top:-2px;width:38px;height:38px;border-radius:100%;background:var(--ink);color:white;display:grid;place-items:center;font-size:15px;font-weight:700}
+.guide .guide-figure{margin:40px auto;text-align:center}
+.guide .guide-figure img{width:min(320px,80%);border:6px solid #252b29;border-radius:24px}
+.guide .guide-figure figcaption{font-size:14px;color:var(--muted);margin-top:12px}
+.guide strong{font-weight:700}
+@media(max-width:760px){.guide{margin-top:36px}.guide p,.guide li{font-size:16px}.guide .guide-steps>li{padding-left:50px}}
+.guide-links{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin-top:10px}
